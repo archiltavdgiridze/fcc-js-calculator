@@ -1,0 +1,73 @@
+  @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+  body {
+    background-color: #c2c2d6;
+    font-family: 'Abel', sans-serif;
+    user-select: none;
+  }
+
+  .calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 10%;
+    width: 320px;
+    color: #fff;
+    background-color: #000;
+    font-size: 2rem;
+  }
+
+  .calculator>* {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    background-color: #4d4d4d;
+  }
+
+  .calculator>*:hover {
+    background-color: #666666;
+  }
+
+  .calculator>*:active {
+    background-color: #999999;
+  }
+
+  .row {
+    grid-column: 1 / -1;
+  }
+
+  #clear {
+    grid-column: 1 / 3;
+  }
+
+  #zero {
+    grid-column: 1 / 3;
+  }
+
+  #equals {
+    text-align: center;
+    grid-row: span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #display {
+    /* grid-column: 1 / -1; */
+    text-align: right;
+    color: #fff;
+    background-color: #000;
+    /* padding-right: 10px; */
+  }
+
+  #clear {
+    background-color: #ff0000;
+    color: #fff;
+  }
+
+  #clear:hover {
+    background-color: #ff3333;
+  }
+
+  #clear:active {
+    background-color: #ff6666;
+  }
